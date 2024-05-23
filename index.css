@@ -1,0 +1,344 @@
+@media only screen and (max-width: 600px) {
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    
+}
+.pagina1{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(81, 78, 78, 0.036), rgba(17, 16, 16, 0.496)), url(fundo1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 95%;
+    margin: auto;
+    padding: 35px 1;
+    font-size:larger;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    margin: 1%;
+    width: 300px ;
+    cursor:default;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #fcfcfc;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+/*conteudos da pagina 1*/
+.conteudo{
+    margin-top: 90px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);   
+    text-align: center;
+    color: #fcfcfc;
+}
+.conteudo h2{
+    font-size: 55px;
+    overflow: hidden; 
+    border-right:transparent;
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: 0.15em; 
+    animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+.conteudo p{
+    margin: 0%;
+    font-size: 25px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:oblique;
+}
+@keyframes typing {
+    from { width: 0}
+    to { width: 100% }
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+}
+.animacao1 {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 2s steps(40, end) 1s forwards, blink-caret 0.75s step-end 5s;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.animacao2 {
+    opacity: 0; /* Start with the element hidden */
+    animation: fadeIn 2s forwards;
+    animation-delay: 3.5s; /* Delay start of fade-in until typing animation completes */
+}
+@keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+.animacao3{
+    opacity: 5;
+    animation: slideIn 1s ease-in;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight:200;
+    font-size: 14.5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #242323c7;
+    border:transparent;
+    background: linear-gradient(rgba(247, 243, 243, 0.547), rgba(255, 255, 255, 0.886));
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #fcfcfc;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border:none;
+}
+
+/*página 2*/
+.pagina2{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(81, 78, 78, 0.036), rgba(17, 16, 16, 0.496)), url(fundo2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.conteudo2{
+    font-size: 25px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.animacao4 {
+    opacity: 0; /* Start with the element hidden */
+    animation: fadeIn 10s forwards;
+}
+.conteudo2 p {
+    margin-top: 110px;
+    color: #fcfcfc;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 65px;
+}
+@keyframes typing {
+    from { width: 0}
+    to { width: 100% }
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+}
+.animacao11 {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 2s steps(30, end) 2s forwards, blink-caret 0.75s step-end 5s;
+}
+button2{
+    width: 0px;
+    padding-left: 65px;
+    text-align: center;
+    margin: 100px;
+    border-radius: 25px;
+    font-weight:200;
+    font-size: 14.5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #242323c7;
+    border:transparent;
+    background: linear-gradient(rgba(247, 243, 243, 0.547), rgba(255, 255, 255, 0.886));
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #fcfcfc;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button2:hover span{
+    width: 100%;
+}
+button2:hover{
+    border:none;
+}
+.oldschool{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.232), rgba(17, 16, 16, 0.811)), url(oldschool.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.old h1{
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 150px;
+    color: #ffffff;
+    overflow: hidden; 
+    border-right:transparent;
+    white-space: nowrap; 
+    margin: 300px;
+    animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+.newschool{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.232), rgba(17, 16, 16, 0.811)), url(newschhol.webp);
+    background-size: cover;
+    background-position: center;
+}
+.new h1{
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 150px;
+    color: #ffffff;
+    overflow: hidden; 
+    border-right:transparent;
+    white-space: nowrap; 
+    margin: 200px;
+    animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+.aquarela{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.232), rgba(17, 16, 16, 0.811)), url(aquarela.webp);
+    background-size: cover;
+    background-position: center;
+}
+.aqua h1{
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 150px;
+    position: absolute;
+    color: #ffffff;
+    overflow: hidden; 
+    border-right:transparent;
+    white-space: nowrap; 
+    margin: 350px;
+    animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+.fineline{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.232), rgba(17, 16, 16, 0.811)), url(fineline.png);
+    background-size: cover;
+    background-position: center;
+}
+.fine h1{
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 150px;
+    position: absolute;
+    color: #ffffff;
+    overflow: hidden; 
+    border-right:transparent;
+    white-space: nowrap; 
+    margin: 350px;
+    animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+.blackwork{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.232), rgba(17, 16, 16, 0.811)), url(blackwork.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.black h1{
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 150px;
+    position: absolute;
+    color: #ffffff;
+    overflow: hidden; 
+    border-right:transparent;
+    white-space: nowrap; 
+    margin: 350px;
+    animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+.realista{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.232), rgba(17, 16, 16, 0.811)), url(realistic.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.real h1{
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 150px;
+    position: absolute;
+    color: #ffffff;
+    overflow: hidden; 
+    border-right:transparent;
+    white-space: nowrap; 
+    margin: 270px;
+    animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+.oriental{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.232), rgba(17, 16, 16, 0.811)), url(oriental.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.oriente h1{
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 150px;
+    position: absolute;
+    color: #ffffff;
+    overflow: hidden; 
+    border-right:transparent;
+    white-space: nowrap; 
+    margin: 300px;
+    animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+}
